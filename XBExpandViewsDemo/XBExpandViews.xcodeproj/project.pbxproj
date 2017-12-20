@@ -13,6 +13,8 @@
 		ED08EA531FEAA873009CA1CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED08EA521FEAA873009CA1CA /* Assets.xcassets */; };
 		ED08EA561FEAA873009CA1CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED08EA541FEAA873009CA1CA /* LaunchScreen.storyboard */; };
 		ED08EA591FEAA873009CA1CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED08EA581FEAA873009CA1CA /* main.m */; };
+		ED08EA631FEAA9F8009CA1CA /* XBGradientColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED08EA621FEAA9F8009CA1CA /* XBGradientColorView.m */; };
+		ED08EA661FEAAA20009CA1CA /* XBExpandButton.m in Sources */ = {isa = PBXBuildFile; fileRef = ED08EA651FEAAA20009CA1CA /* XBExpandButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		ED08EA551FEAA873009CA1CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED08EA571FEAA873009CA1CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED08EA581FEAA873009CA1CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ED08EA611FEAA9F8009CA1CA /* XBGradientColorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XBGradientColorView.h; sourceTree = "<group>"; };
+		ED08EA621FEAA9F8009CA1CA /* XBGradientColorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XBGradientColorView.m; sourceTree = "<group>"; };
+		ED08EA641FEAAA20009CA1CA /* XBExpandButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XBExpandButton.h; sourceTree = "<group>"; };
+		ED08EA651FEAAA20009CA1CA /* XBExpandButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XBExpandButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,8 @@
 		ED08EA481FEAA873009CA1CA /* XBExpandViews */ = {
 			isa = PBXGroup;
 			children = (
+				ED08EA601FEAA9D7009CA1CA /* XBExpandButton */,
+				ED08EA5F1FEAA9D6009CA1CA /* XBGradientColorView */,
 				ED08EA491FEAA873009CA1CA /* AppDelegate.h */,
 				ED08EA4A1FEAA873009CA1CA /* AppDelegate.m */,
 				ED08EA4C1FEAA873009CA1CA /* ViewController.h */,
@@ -69,6 +77,24 @@
 				ED08EA581FEAA873009CA1CA /* main.m */,
 			);
 			path = XBExpandViews;
+			sourceTree = "<group>";
+		};
+		ED08EA5F1FEAA9D6009CA1CA /* XBGradientColorView */ = {
+			isa = PBXGroup;
+			children = (
+				ED08EA611FEAA9F8009CA1CA /* XBGradientColorView.h */,
+				ED08EA621FEAA9F8009CA1CA /* XBGradientColorView.m */,
+			);
+			path = XBGradientColorView;
+			sourceTree = "<group>";
+		};
+		ED08EA601FEAA9D7009CA1CA /* XBExpandButton */ = {
+			isa = PBXGroup;
+			children = (
+				ED08EA641FEAAA20009CA1CA /* XBExpandButton.h */,
+				ED08EA651FEAAA20009CA1CA /* XBExpandButton.m */,
+			);
+			path = XBExpandButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,7 +170,9 @@
 			files = (
 				ED08EA4E1FEAA873009CA1CA /* ViewController.m in Sources */,
 				ED08EA591FEAA873009CA1CA /* main.m in Sources */,
+				ED08EA631FEAA9F8009CA1CA /* XBGradientColorView.m in Sources */,
 				ED08EA4B1FEAA873009CA1CA /* AppDelegate.m in Sources */,
+				ED08EA661FEAAA20009CA1CA /* XBExpandButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +308,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = XBExpandViews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xbingo.XBExpandViews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -293,6 +322,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = XBExpandViews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xbingo.XBExpandViews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
