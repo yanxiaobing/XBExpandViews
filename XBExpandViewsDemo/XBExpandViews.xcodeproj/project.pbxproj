@@ -15,6 +15,7 @@
 		ED08EA591FEAA873009CA1CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED08EA581FEAA873009CA1CA /* main.m */; };
 		ED08EA631FEAA9F8009CA1CA /* XBGradientColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED08EA621FEAA9F8009CA1CA /* XBGradientColorView.m */; };
 		ED08EA661FEAAA20009CA1CA /* XBExpandButton.m in Sources */ = {isa = PBXBuildFile; fileRef = ED08EA651FEAAA20009CA1CA /* XBExpandButton.m */; };
+		EDE58ADD1FF4DFEB00C45EB1 /* XBGradientLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE58ADC1FF4DFEB00C45EB1 /* XBGradientLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		ED08EA621FEAA9F8009CA1CA /* XBGradientColorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XBGradientColorView.m; sourceTree = "<group>"; };
 		ED08EA641FEAAA20009CA1CA /* XBExpandButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XBExpandButton.h; sourceTree = "<group>"; };
 		ED08EA651FEAAA20009CA1CA /* XBExpandButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XBExpandButton.m; sourceTree = "<group>"; };
+		EDE58ADB1FF4DFEB00C45EB1 /* XBGradientLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XBGradientLabel.h; sourceTree = "<group>"; };
+		EDE58ADC1FF4DFEB00C45EB1 /* XBGradientLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XBGradientLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +67,7 @@
 		ED08EA481FEAA873009CA1CA /* XBExpandViews */ = {
 			isa = PBXGroup;
 			children = (
+				EDE58ADA1FF4DFAC00C45EB1 /* XBGradientLabel */,
 				ED08EA601FEAA9D7009CA1CA /* XBExpandButton */,
 				ED08EA5F1FEAA9D6009CA1CA /* XBGradientColorView */,
 				ED08EA491FEAA873009CA1CA /* AppDelegate.h */,
@@ -95,6 +99,15 @@
 				ED08EA651FEAAA20009CA1CA /* XBExpandButton.m */,
 			);
 			path = XBExpandButton;
+			sourceTree = "<group>";
+		};
+		EDE58ADA1FF4DFAC00C45EB1 /* XBGradientLabel */ = {
+			isa = PBXGroup;
+			children = (
+				EDE58ADB1FF4DFEB00C45EB1 /* XBGradientLabel.h */,
+				EDE58ADC1FF4DFEB00C45EB1 /* XBGradientLabel.m */,
+			);
+			path = XBGradientLabel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +185,7 @@
 				ED08EA591FEAA873009CA1CA /* main.m in Sources */,
 				ED08EA631FEAA9F8009CA1CA /* XBGradientColorView.m in Sources */,
 				ED08EA4B1FEAA873009CA1CA /* AppDelegate.m in Sources */,
+				EDE58ADD1FF4DFEB00C45EB1 /* XBGradientLabel.m in Sources */,
 				ED08EA661FEAAA20009CA1CA /* XBExpandButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
