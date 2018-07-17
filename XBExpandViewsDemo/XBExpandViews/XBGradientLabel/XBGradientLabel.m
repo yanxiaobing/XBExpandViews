@@ -75,25 +75,25 @@
     
     // set gradient direction
     switch (self.direction) {
-        case XBGradientColorDirectionLeftToRight:
+        case XBGradientColorLabDirectionLeftToRight:
         {
             startPoint = CGPointMake(0, 0);
             endPoint = CGPointMake(1, 0);
         }
             break;
-        case XBGradientColorDirectionTopToBottom:
+        case XBGradientColorLabDirectionTopToBottom:
         {
             startPoint = CGPointMake(0, 0);
             endPoint = CGPointMake(0, 1);
         }
             break;
-        case XBGradientColorDirectionLeftTopToRightBottom:
+        case XBGradientColorLabDirectionLeftTopToRightBottom:
         {
             startPoint = CGPointMake(0, 0);
             endPoint = CGPointMake(1, 1);
         }
             break;
-        case XBGradientColorDirectionLeftBottomToRightTop:
+        case XBGradientColorLabDirectionLeftBottomToRightTop:
         {
             startPoint = CGPointMake(0, 1);
             endPoint = CGPointMake(1, 0);
@@ -164,7 +164,7 @@
     [self setNeedsLayout];
 }
 
--(void)setDirection:(XBGradientColorDirection)direction{
+-(void)setDirection:(XBGradientColorLabDirection)direction{
     _direction = direction;
     [self setNeedsLayout];
 }

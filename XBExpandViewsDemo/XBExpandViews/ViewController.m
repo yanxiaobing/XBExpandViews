@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "XBGradientLabel.h"
 #import "XBExpandButton.h"
+#import "XBGradientColorView.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet XBGradientLabel *xbtestlabel;
@@ -79,6 +80,27 @@
     testBtn.interval = 1;
     [testBtn setTitle:@"测试按钮点击间隔时间" forState:UIControlStateNormal];
     [testBtn addTarget:self action:@selector(testBtnAction) forControlEvents:UIControlEventTouchUpInside];
+    
+    
+    XBGradientColorView *colorView = [[XBGradientColorView alloc]initWithFrame:CGRectMake(0, 500, 200, 50)];
+    colorView.colors = @[[UIColor redColor],[UIColor yellowColor]];
+    colorView.direction = XBGradientColorDirectionLeftToRight;
+    [self.view addSubview:colorView];
+    
+    XBGradientColorView *colorView1 = [[XBGradientColorView alloc]initWithFrame:CGRectMake(0, 550, 200, 50)];
+    colorView1.colors = @[[UIColor redColor],[UIColor yellowColor]];
+    colorView1.direction = XBGradientColorDirectionTopToBottom;
+    [self.view addSubview:colorView1];
+    
+    XBGradientColorView *colorView2 = [[XBGradientColorView alloc]initWithFrame:CGRectMake(0, 600, 200, 50)];
+    colorView2.colors = @[[UIColor redColor],[UIColor yellowColor]];
+    colorView2.direction = XBGradientColorDirectionLeftTopToRightBottom;
+    [self.view addSubview:colorView2];
+    
+    XBGradientColorView *colorView3 = [[XBGradientColorView alloc]initWithFrame:CGRectMake(0, 650, 200, 50)];
+    colorView3.colors = @[[UIColor redColor],[UIColor yellowColor]];
+    colorView3.direction = XBGradientColorDirectionLeftBottomToRightTop;
+    [self.view addSubview:colorView3];
     
 }
 
