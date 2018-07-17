@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "XBGradientLabel.h"
+#import "XBExpandButton.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet XBGradientLabel *xbtestlabel;
@@ -71,6 +72,18 @@
     testLabel.frame = CGRectMake(0, 300, 375, 30);
     [self.view addSubview:testLabel];
     testLabel.colors = @[[UIColor blackColor],[UIColor orangeColor]];
+    
+    XBExpandButton *testBtn = [[XBExpandButton alloc]initWithFrame:CGRectMake(0, 400, 200, 50)];
+    testBtn.backgroundColor = [UIColor redColor];
+    [self.view addSubview:testBtn];
+    testBtn.interval = 1;
+    [testBtn setTitle:@"测试按钮点击间隔时间" forState:UIControlStateNormal];
+    [testBtn addTarget:self action:@selector(testBtnAction) forControlEvents:UIControlEventTouchUpInside];
+    
+}
+
+-(void)testBtnAction{
+    NSLog(@"date:%@",[NSDate date]);
 }
 
 
