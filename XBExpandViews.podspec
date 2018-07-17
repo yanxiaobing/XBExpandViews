@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
     s.name         = 'XBExpandViews'
-    s.version      = '0.0.1'
-    s.summary      = 'common UI'
+    s.version      = '0.0.2'
+    s.summary      = 'expand feature and function'
     s.homepage     = 'https://github.com/yanxiaobing/XBExpandViews'
     s.license      = 'MIT'
     s.authors      = {'XBingo' => 'dove025@qq.com'}
